@@ -1,0 +1,17 @@
+server:
+  port: 10002
+  error:
+    include-message: always
+
+spring:
+  kafka:
+    producer:
+      value-serializer: org.apache.kafka.common.serialization.LongSerializer
+    topic:
+      tiny-url: "tiny.url"
+      visitor: "visitor.analytics"
+    streams:
+      application-id: "tiny-url.redirector-service"
+    store:
+      tiny-url-store-name: "tinyUrlStore"
+    bootstrap-servers: localhost:9092

@@ -1,0 +1,14 @@
+server:
+  port: 10002
+  error:
+    include-message: always
+
+spring:
+  kafka:
+    topic:
+      tiny-url: "tiny.url"
+    streams:
+      application-id: "tiny-url.redirector-service"
+    store:
+      tiny-url-store-name: "tinyUrlStore"
+    bootstrap-servers: "kafka1:9092,kafka2:9093,kafka3:9094"

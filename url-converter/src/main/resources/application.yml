@@ -1,0 +1,14 @@
+server:
+  port: 10001
+
+spring:
+  redirector:
+    url: localhost:10002/redirector/
+  kafka:
+    topic:
+      tiny-url: "tiny.url"
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
