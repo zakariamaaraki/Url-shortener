@@ -4,7 +4,7 @@
 
 To run this project you need a kafka cluster running, you'll find a docker-compose file in this project, that contains zookeeper and 3 brokers (3 brokers are enough to keep the cluster up and running).
 
-## How It Works
+## Architecture
 
 ![Alt text](./archi.png?raw=true "Architecture")
 
