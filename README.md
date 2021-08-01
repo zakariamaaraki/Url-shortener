@@ -4,7 +4,7 @@ URL shortening is used to create shorter aliases for long URLs. We call these sh
 
 ## Prerequisites
 
-To run this project you need a kafka cluster running, you'll find a docker-compose file in this project, that contains zookeeper and 3 brokers (3 brokers are enough to keep the cluster up and running).
+To run this project you need a kafka cluster running, you'll find in this project a docker-compose file that contains zookeeper and 3 brokers (3 brokers are enough to keep the cluster up and running).
 
 ## Architecture
 
