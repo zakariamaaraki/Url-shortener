@@ -10,7 +10,11 @@ To run this project you need a kafka cluster running, you'll find in this projec
 
 ![Alt text](./archi.png?raw=true "Architecture")
 
-Url shortener implementation using only Apache Kafka (simple producer and Kafka Streams library). Kafka Streams natively provides all of the required functionality for interactively querying the state of the application. \
+Url shortener implementation using only Apache Kafka (simple producer and Kafka Streams library). \
+
+## Interactive queries
+
+Kafka Streams natively provides all of the required functionality for interactively querying the state of the application. \
 A Kafka Streams application typically runs on multiple instances. The state that is locally available on any given instance is only a subset of the application’s entire state. Querying the local stores on an instance will only return data locally available on that particular instance. \
 Kafka Streams materializes one state store per stream partition. This means the application will potentially manage many underlying state stores. The API enables to query all of the underlying stores without having to know which partition the data is in.
 
