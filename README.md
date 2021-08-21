@@ -25,6 +25,10 @@ A Kafka Streams application typically runs on multiple instances. The state that
 
 Kafka Streams materializes one state store per stream partition. This means the application will potentially manage many underlying state stores. The API enables to query all of the underlying stores without having to know which partition the data is in.
 
+## Endpoints
+
+![Alt text](./endpoints.png?raw=true "Endpoints")
+
 ## Author
 
 - **Zakaria Maaraki** - _Initial work_ - [zakariamaaraki](https://github.com/zakariamaaraki)
