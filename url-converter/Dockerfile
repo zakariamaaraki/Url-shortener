@@ -9,4 +9,4 @@ FROM openjdk:11.0.6-jre-slim
 WORKDIR /url-converter
 COPY --from=BUILD_STAGE /url-converter/target/*.jar url-converter.jar
 EXPOSE 10001
-ENTRYPOINT ["java", "-jar", "url-converter.jar"]
+ENTRYPOINT ["java", "-jar", "url-converter.jar", "--spring.config.location=classpath:/application-container.yml"]

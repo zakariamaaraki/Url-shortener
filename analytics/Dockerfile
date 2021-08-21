@@ -9,4 +9,4 @@ FROM openjdk:11.0.6-jre-slim
 WORKDIR /analytics
 COPY --from=BUILD_STAGE /analytics/target/*.jar analytics.jar
 EXPOSE 10003
-ENTRYPOINT ["java", "-jar", "analytics.jar"]
+ENTRYPOINT ["java", "-jar", "analytics.jar", "--spring.config.location=classpath:/application-container.yml"]

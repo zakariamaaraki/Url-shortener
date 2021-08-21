@@ -1,9 +1,16 @@
 server:
   port: 10001
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
 spring:
+  application:
+    name: url-converter
   redirector:
-    url: localhost:10002/redirector/
+    prefix: http://localhost:10002/redirector/
   kafka:
     topic:
       tiny-url: "tiny.url"
@@ -12,3 +19,8 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, mappings, metrics

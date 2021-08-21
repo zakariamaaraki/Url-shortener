@@ -3,7 +3,14 @@ server:
   error:
     include-message: always
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
 spring:
+  application:
+    name: Analytics
   kafka:
     topic:
       visitor: "visitor.analytics"
@@ -13,4 +20,9 @@ spring:
       visitor-store-name: "visitorStore"
     bootstrap-servers: localhost:9092
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, mappings, metrics
 

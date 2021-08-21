@@ -16,8 +16,8 @@ public class SwaggerConfig {
 	public Docket api() {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.tiny.url.analytics.controller"))
-				.paths(PathSelectors.ant("/analytics/*"))
+				.apis(RequestHandlerSelectors.basePackage("com.tiny.url.analytics.controllers"))
+				.paths(PathSelectors.ant("/api/*"))
 				.build();
 	}
 }

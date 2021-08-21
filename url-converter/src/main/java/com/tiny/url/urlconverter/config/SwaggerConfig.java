@@ -16,8 +16,8 @@ public class SwaggerConfig {
 	public Docket api() {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.tiny.url.urlconverter.controller"))
-				.paths(PathSelectors.ant("/converter/*"))
+				.apis(RequestHandlerSelectors.basePackage("com.tiny.url.urlconverter.controllers"))
+				.paths(PathSelectors.ant("/api/*"))
 				.build();
 	}
 }
