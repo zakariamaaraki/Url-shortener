@@ -12,6 +12,10 @@ To run this project you need a kafka cluster running, you'll find in this projec
 
 Url shortener implementation using only Apache Kafka (simple producer and Kafka Streams library). 
 
+## CQRS pattern
+
+CQRS stands for Command and Query Responsibility Segregation, a pattern that separates read and update operations for a data store. Implementing CQRS in your application can maximize its performance, scalability, and security. The flexibility created by migrating to CQRS allows a system to better evolve over time and prevents update commands from causing merge conflicts at the domain level.
+
 ## Interactive queries
 
 Kafka Streams natively provides all of the required functionality for interactively querying the state of the application. \
